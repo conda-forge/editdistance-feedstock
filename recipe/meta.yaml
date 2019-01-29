@@ -1,8 +1,8 @@
 {% set name = "editdistance" %}
-{% set version = "0.4" %}
+{% set version = "0.5.2" %}
 {% set file_ext = "tar.gz" %}
 {% set hash_type = "sha256" %}
-{% set hash_value = "c765db6f8817d38922e4a50be4b9ab338b2c539377b6fcf0bca11dea72eeb8c1" %}
+{% set hash_value = "5a51276aaa6be65c2ac0fb807af93267b4f2488662fc925d27c4d317ef5d067a" %}
 
 package:
   name: '{{ name|lower }}'
@@ -14,7 +14,7 @@ source:
   '{{ hash_type }}': '{{ hash_value }}'
 
 build:
-  number: 1001
+  number: 0
   script: python -m pip install --no-deps --ignore-installed .
 
 requirements:
