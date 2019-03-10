@@ -1,8 +1,8 @@
 {% set name = "editdistance" %}
-{% set version = "0.5.2" %}
+{% set version = "0.5.3" %}
 {% set file_ext = "tar.gz" %}
 {% set hash_type = "sha256" %}
-{% set hash_value = "5a51276aaa6be65c2ac0fb807af93267b4f2488662fc925d27c4d317ef5d067a" %}
+{% set hash_value = "89d016dda04649b2c49e12b34337755a7b612bfd690420edd50ab31787120c1f" %}
 
 package:
   name: '{{ name|lower }}'
