@@ -1,17 +1,17 @@
 {% set name = "editdistance" %}
-{% set version = "0.5.3" %}
+{% set version = "0.6.0" %}
 
 package:
-  name: '{{ name|lower }}'
-  version: '{{ version }}'
+  name: {{ name|lower }}
+  version: {{ version }}
 
 source:
-  fn: '{{ name }}-{{ version }}.tar.gz'
+  fn: {{ name }}-{{ version }}.tar.gz
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  'sha256': '89d016dda04649b2c49e12b34337755a7b612bfd690420edd50ab31787120c1f'
+  sha256: 82de4fb7c6a87c7c2978e5f509dc790e8657b264edbaf87ca6869e2022aa220e
 
 build:
-  number: 3
+  number: 0
   script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
@@ -38,9 +38,9 @@ about:
   home: https://www.github.com/aflc/editdistance
   license: MIT
   license_family: MIT
-  license_file: '{{ environ["RECIPE_DIR"] }}/LICENSE'
-  summary: 'Fast implementation of the edit distance(Levenshtein distance)'
-  description: "Fast implementation of the edit distance(Levenshtein distance)"
+  license_file: {{ environ["RECIPE_DIR"] }}/LICENSE
+  summary: Fast implementation of the edit distance(Levenshtein distance)
+  description: Fast implementation of the edit distance(Levenshtein distance)
   doc_url: https://github.com/aflc/editdistance
   dev_url: https://github.com/aflc/editdistance
 
