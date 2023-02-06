@@ -1,5 +1,5 @@
 {% set name = "editdistance" %}
-{% set version = "0.6.0" %}
+{% set version = "0.6.1" %}
 
 package:
   name: {{ name|lower }}
@@ -8,10 +8,10 @@ package:
 source:
   fn: {{ name }}-{{ version }}.tar.gz
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 82de4fb7c6a87c7c2978e5f509dc790e8657b264edbaf87ca6869e2022aa220e
+  sha256: 124a3ebe1934ed86c0bdb5deafcc67494604a7cc63bdbb587665b76c85648262
 
 build:
-  number: 2
+  number: 0
   script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
