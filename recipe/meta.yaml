@@ -6,7 +6,7 @@ package:
   version: {{ version }}
 
 source:
-  url: https://github.com/pyqg/pyqg/archive/v{{ version }}.tar.gz
+  url: https://github.com/roy-ht/editdistance/archive/v{{ version }}.tar.gz
   sha256: 9a582ea2057a364376955dcb9cec2bb17a2bcafd16ad45ad237a035bbb7dac9a
 
 build:
