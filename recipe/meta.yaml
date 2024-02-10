@@ -1,5 +1,5 @@
 {% set name = "editdistance" %}
-{% set version = "0.6.2" %}
+{% set version = "0.8.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,10 +7,10 @@ package:
 
 source:
   url: https://github.com/roy-ht/editdistance/archive/v{{ version }}.tar.gz
-  sha256: 9a582ea2057a364376955dcb9cec2bb17a2bcafd16ad45ad237a035bbb7dac9a
+  sha256: 650c5f15083af274bcedbb3832b5f6570fc79f67171cc0cbdc83fb7cd0de18a8
 
 build:
-  number: 2
+  number: 0
   script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
